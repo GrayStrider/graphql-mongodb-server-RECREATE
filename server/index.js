@@ -5,7 +5,8 @@ import mongoose from "mongoose";
 import schema from "../graphql/";
 import { models } from "./config/db/";
 
-const { mongoURI: db } = process.env;
+// const { mongoURI: db } = process.env;
+const db = "mongodb+srv://ivan:howdoiencryptpasswords@mongonodeexpresstest-galpk.mongodb.net/test?retryWrites=true";
 
 const pubsub = new PubSub();
 
