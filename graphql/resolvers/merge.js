@@ -11,7 +11,7 @@ const user = async userId => {
     } catch (error) {
         throw error;
     }
-}
+};
 
 const transformPost = event => {
     return {
@@ -19,6 +19,6 @@ const transformPost = event => {
         _id: event.id,
         creator: user.bind(this, event.creator)
     }
-}
+};
 
 exports.transformPost = transformPost;

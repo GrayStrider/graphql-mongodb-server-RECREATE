@@ -2,8 +2,8 @@ require("dotenv").config();
 import { GraphQLServer, PubSub } from "graphql-yoga";
 import mongoose from "mongoose";
 
-import schema from "../graphql/";
-import { models } from "./config/db/";
+import schema from "../graphql/index";
+import { models } from "./config/db/index";
 
 const { mongoURI: db } = process.env;
 
